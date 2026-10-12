@@ -45,6 +45,13 @@ This is a baseline, not a reliable operational prediction system. Alert dynamics
 ## Dashboard
 
 Run `streamlit run app.py` to inspect regional probabilities by time, interactive hourly charts, heatmaps, regional comparisons, and available backtest outputs. Geographic map rendering requires a verified `assets/oblasts.geojson` with `feature.properties.region` matching CSV region names; it is not bundled. District forecasts are not supported by this dataset.
+### Hourly Forecasts and Regional Heatmap
+
+![Hourly forecasts and regional heatmap](outputs/dashboard.png)
+
+### Regional Probability Ranking
+
+![Regional probability ranking](outputs/ranking.png)
 
 ## Project structure
 
