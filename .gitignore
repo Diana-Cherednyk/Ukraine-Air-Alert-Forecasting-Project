@@ -33,7 +33,7 @@ Thumbs.db
 .streamlit/secrets.toml
 
 # Generated training, model, and forecast artifacts
-outputs/
+# outputs/
 models/
 artifacts/
 checkpoints/
@@ -42,13 +42,13 @@ logs/
 
 # Local datasets and restricted holdout data
 # Keep the dataset out of Git unless its redistribution is explicitly intended.
-volunteer_data_en.csv
-official_data_en.csv
-data/raw/
-data/processed/
-data/train_only.csv
-data/holdout/
-data/restricted/
+# volunteer_data_en.csv
+# official_data_en.csv
+# data/raw/
+# data/processed/
+# data/train_only.csv
+# data/holdout/
+# data/restricted/
 snapshot/
 
 # Jupyter notebook checkpoints
