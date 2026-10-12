@@ -16,7 +16,7 @@ Requires Python 3.11+ and the included `volunteer_data_en.csv`. `python main.py`
 
 ## Objective and data
 
-Source: user-provided `volunteer_data_en.csv` -rhttps://github.com/Vadimkin/ukrainian-airaid-sirens-dataset, containing regional alert intervals with `region`, `started_at`, and `finished_at`. For each region and local hour, estimate:
+Source: user-provided `volunteer_data_en.csv` [ukrainian-airaid-sirens-dataset](https://github.com/Vadimkin/ukrainian-airaid-sirens-dataset), containing regional alert intervals with `region`, `started_at`, and `finished_at`. For each region and local hour, estimate:
 - `prob_started`: probability at least one new alert starts during the hour;
 - `prob_active`: probability an alert is active during any part of the hour.
 
