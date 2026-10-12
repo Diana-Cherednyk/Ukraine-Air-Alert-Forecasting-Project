@@ -1,0 +1,55 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging and build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Generated training, model, and forecast artifacts
+outputs/
+models/
+artifacts/
+checkpoints/
+logs/
+*.log
+
+# Local datasets and restricted holdout data
+# Keep the dataset out of Git unless its redistribution is explicitly intended.
+volunteer_data_en.csv
+official_data_en.csv
+data/raw/
+data/processed/
+data/train_only.csv
+data/holdout/
+data/restricted/
+snapshot/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/

@@ -1,0 +1,9 @@
+PROJECT WITHOUT PRE-GENERATED FORECASTS
+
+This package contains the Python source and volunteer_data_en.csv, but no saved predictions, evaluation results, or trained outputs.
+
+Install: pip install -r requirements.txt
+Generate forecasts yourself: python main.py --input volunteer_data_en.csv
+Launch dashboard after generation: streamlit run app.py
+
+The forecasting script generates predictions when run. The original source CSV contains holdout data; scripts/prepare.py isolates training records before model training.
