@@ -16,7 +16,7 @@ Requires Python 3.11+ and the included `volunteer_data_en.csv`. `python main.py`
 
 ## Objective and data
 
-Source: user-provided `volunteer_data_en.csv`, containing regional alert intervals with `region`, `started_at`, and `finished_at`. For each region and local hour, estimate:
+Source: user-provided `volunteer_data_en.csv` -rhttps://github.com/Vadimkin/ukrainian-airaid-sirens-dataset, containing regional alert intervals with `region`, `started_at`, and `finished_at`. For each region and local hour, estimate:
 - `prob_started`: probability at least one new alert starts during the hour;
 - `prob_active`: probability an alert is active during any part of the hour.
 
@@ -24,7 +24,7 @@ Intervals are treated as half-open `[started_at, finished_at)`; an alert lasting
 
 ## Forecast experiment and leakage controls
 
-- Source history begins in February 2022; the cutoff is **2026-10-05 00:00 Europe/Kyiv**, equivalent to **2026-10-04 21:00 UTC**.
+- Source history begins in February 2022; the cutoff is **2026-10-05 00:00 Europe/Kyiv**.
 - Blind forecast: October 5–12, 2026, 192 hourly bins per region.
 - `scripts/prepare.py` retains only alert starts strictly before the cutoff and censors finish times crossing the cutoff.
 - `scripts/train_forecast.py` reads only `data/train_only.csv`; it does not receive the raw holdout dataset.
